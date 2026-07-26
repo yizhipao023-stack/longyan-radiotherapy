@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }}｜{% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <span class="brand-mark">RT</span>
+        <span><strong>龙岩放疗百科</strong><small>放疗设备与医学科普</small></span>
+      </a>
+      <button class="menu-button" aria-label="打开导航" onclick="document.body.classList.toggle('nav-open')">☰</button>
+      <nav class="nav">
+        <a href="{{ '/' | relative_url }}">首页</a>
+        <a href="{{ '/articles/longyan-radiotherapy-equipment/' | relative_url }}">放疗设备</a>
+        <a href="{{ '/articles/gamma-knife-guide/' | relative_url }}">伽马刀科普</a>
+        <a href="{{ '/about/' | relative_url }}">关于本站</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>{{ content }}</main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>龙岩放疗百科</strong><p>提供客观、审慎、易懂的放射治疗医学科普信息。</p></div>
+      <div><p>内容仅供健康教育与医学交流，不替代医生面诊、影像评估及个体化治疗决策。</p></div>
+    </div>
+  </footer>
+  <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>

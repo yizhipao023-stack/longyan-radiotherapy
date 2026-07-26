@@ -1,12 +1,20 @@
 ---
 layout: default
-permalink: /about/
 title: 关于本站
-description: 龙岩放疗百科的内容定位与医学声明。
+permalink: /about/
+description: 龙岩放疗百科的网站定位、内容原则与医学免责声明。
 ---
+<section class="article-hero"><div class="container narrow"><span class="eyebrow">关于本站</span><h1>龙岩放疗百科</h1><p class="lead">一个以区域放疗资源和医学知识为核心的公益科普页面。</p></div></section>
+<section class="container narrow article-card prose">
+## 网站定位
 
-# 关于本站
+本站介绍龙岩地区放射治疗设备、技术特点及常见肿瘤放疗知识，帮助公众理解“不同设备适合解决什么问题”。
 
-“龙岩放疗百科”是面向公众和患者家属的区域医学科普网站，主要介绍放疗设备、放疗技术、常见适应证以及治疗过程中常见的问题。
+## 内容原则
 
-本站不进行疗效承诺，不以设备替代临床判断，也不对具体患者直接给出诊疗结论。涉及个体病例时，应由具备资质的医生结合病理、影像、分期及身体状况进行评估。
+内容尽量采用中立、可核实、不过度承诺疗效的表达。涉及具体治疗方案时，强调多学科评估与个体化决策。
+
+## 医学声明
+
+本站不能替代医院面诊。患者如出现明显不适、神经系统症状、呼吸困难、出血或其他急症，应及时就医。
+</section>

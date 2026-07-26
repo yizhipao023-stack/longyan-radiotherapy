@@ -1,68 +1,39 @@
-# 龙岩放疗百科：使用说明
+# 龙岩放疗百科｜上传说明
 
-## 一、第一次上传
+## 第一次上传（推荐做法）
 
-把本压缩包解压后，将里面的全部文件和文件夹上传到 GitHub 仓库 `longyan-radiotherapy` 的根目录。
+1. 在仓库 Code 页面，删除旧的 `index.html`、根目录的 `default.html`、`post.html`、`style.css`。
+2. 将本压缩包解压。
+3. 上传解压后的全部文件和文件夹到仓库根目录。
+4. 保持 Pages 设置：Deploy from a branch → main → /(root)。
+5. 等待 Actions 中 `pages build and deployment` 完成。
 
-仓库根目录应直接看到：
+## 正确的目录结构
 
+- `_layouts/default.html`
+- `_layouts/post.html`
+- `_posts/*.md`
+- `assets/css/style.css`
+- `assets/js/site.js`
 - `_config.yml`
 - `index.md`
-- `about.md`
-- `_layouts`
-- `_posts`
-- `assets`
 
-不要再把它们套在一个额外的文件夹里面。
+## 新增文章
 
-GitHub Pages 设置保持：
+在 `_posts` 中新建文件，例如：
 
-- Source：Deploy from a branch
-- Branch：main
-- Folder：/(root)
-- Custom domain：留空
+`2026-08-01-lung-cancer-sbrt.md`
 
-网站地址：
-
-https://yizhipao023-stack.github.io/longyan-radiotherapy/
-
-## 二、以后怎样添加文章
-
-进入 `_posts` 文件夹，点击 **Add file → Create new file**。
-
-文件名必须使用：
-
-`年-月-日-英文短标题.md`
-
-例如：
-
-`2026-08-01-what-is-gamma-knife.md`
-
-文章开头复制：
+开头写：
 
 ```yaml
 ---
-title: 什么是第五代伽马刀？
-updated: 2026年8月
-description: 用通俗语言介绍第五代伽马刀的基本原理、常见适应证和注意事项。
-keywords: 第五代伽马刀, 陀螺刀, 立体定向放疗
+layout: post
+title: 肺癌SBRT是什么？
+slug: lung-cancer-sbrt
+category: 肺癌放疗
+description: 一句话概括文章内容。
 ---
 ```
 
-横线下面直接写正文：
-
-```markdown
-## 基本原理
-
-这里写正文。
-
-## 常见适应证
-
-这里写正文。
-```
-
-完成后选择 **Commit directly to the main branch**，再点击 **Commit changes**。通常数分钟后网站会自动更新。
-
-## 三、修改已有文章
-
-进入 `_posts`，点击文章文件，再点击铅笔图标。修改后提交到 `main` 分支即可。
+下面直接写正文即可。
