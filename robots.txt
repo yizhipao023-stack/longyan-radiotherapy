@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yizhipao023-stack.github.io/longyan-radiotherapy/sitemap.xml

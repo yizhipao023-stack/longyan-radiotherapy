@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">龙岩放疗百科</a>
+      <nav>
+        <a href="{{ '/' | relative_url }}">首页</a>
+        <a href="{{ '/about/' | relative_url }}">关于本站</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>龙岩放疗百科｜医学科普，不替代面诊、诊断或个体化治疗建议。</p>
+      <p>最后更新：{{ site.time | date: '%Y年%m月' }}</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+title: 龙岩放疗百科
+description: 龙岩地区放疗设备与精准放射治疗医学科普平台
+lang: zh-CN
+url: "https://yizhipao023-stack.github.io"
+baseurl: "/longyan-radiotherapy"
+permalink: /articles/:title/
+markdown: kramdown
+timezone: Asia/Shanghai
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

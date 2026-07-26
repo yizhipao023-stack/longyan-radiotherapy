@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="article">
+  <p class="eyebrow">医学科普</p>
+  <h1>{{ page.title }}</h1>
+  <p class="meta">发布时间：{{ page.date | date: "%Y年%m月%d日" }}{% if page.updated %}｜更新时间：{{ page.updated }}{% endif %}</p>
+  {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+  {{ content }}
+  <div class="notice">
+    <strong>医学声明：</strong>本文仅用于健康教育和医学科普，不能替代医生面诊。具体治疗方案需结合病理、影像、分期、体能状态及多学科评估。
+  </div>
+</article>
