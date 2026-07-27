@@ -1,3 +1,1 @@
-document.querySelectorAll('.nav a').forEach(function(link){
-  if (link.pathname === window.location.pathname) link.setAttribute('aria-current','page');
-});
+document.addEventListener('input',e=>{if(!e.target.matches('[data-search]'))return;const q=e.target.value.trim().toLowerCase();document.querySelectorAll('[data-search-item]').forEach(x=>x.style.display=x.innerText.toLowerCase().includes(q)?'flex':'none')});
