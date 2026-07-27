@@ -1,10 +1,8 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://yizhipao023-stack.github.io/longyan-radiotherapy/</loc></url>
-<url><loc>https://yizhipao023-stack.github.io/longyan-radiotherapy/articles/equipment.html</loc></url>
-<url><loc>https://yizhipao023-stack.github.io/longyan-radiotherapy/articles/gamma-knife.html</loc></url>
-<url><loc>https://yizhipao023-stack.github.io/longyan-radiotherapy/articles/brain-metastasis.html</loc></url>
-<url><loc>https://yizhipao023-stack.github.io/longyan-radiotherapy/articles/lung-cancer.html</loc></url>
-<url><loc>https://yizhipao023-stack.github.io/longyan-radiotherapy/faq.html</loc></url>
-<url><loc>https://yizhipao023-stack.github.io/longyan-radiotherapy/about.html</loc></url>
+{% for page in site.pages %}{% if page.url and page.url != '/404.html' %}<url><loc>{{ page.url | absolute_url }}</loc></url>{% endif %}{% endfor %}
+{% for post in site.posts %}<url><loc>{{ post.url | absolute_url }}</loc><lastmod>{{ post.date | date_to_xmlschema }}</lastmod></url>{% endfor %}
 </urlset>

@@ -1,0 +1,7 @@
+title: 龙岩放疗百科
+description: 福建省龙岩市精准放疗公益科普与学术交流平台
+url: https://yizhipao023-stack.github.io
+baseurl: /longyan-radiotherapy
+lang: zh-CN
+markdown: kramdown
+permalink: /articles/:title/

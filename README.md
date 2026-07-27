@@ -1,10 +1,13 @@
-# 龙岩放疗百科 V3
+# 龙岩放疗百科 V5 Academic Edition
 
-## 更新方法
-1. 保留本地仓库里的 `.git`。
-2. 用本版本文件覆盖仓库根目录。
-3. GitHub Desktop：Commit to main → Push origin。
-4. 等 Actions 绿色勾后，浏览器 Ctrl+F5。
+本更新包将网站升级为患者科普与学术交流双轨平台。
 
-## 新增文章
-复制 `articles/lung-cancer.html`，重命名后修改标题、描述和正文，再在首页文章列表添加链接。
+## 本版更新
+- 全站统一“伽玛刀”术语
+- 新增主编页面，职务更新为“肿瘤放化疗科主任”
+- 新增科研成果、AI科研中心、患者指南
+- 重构首页与导航
+- 完善 SEO、canonical、OpenGraph、robots.txt、llms.txt、humans.txt
+
+## 部署
+将本文件夹全部内容上传并覆盖 GitHub 仓库根目录，等待 GitHub Pages 自动部署。
